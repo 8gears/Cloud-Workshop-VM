@@ -1,14 +1,14 @@
 # Workshop VM in the Cloud
 
-Setup Workshop VMs in Minutes on AWS or Scaleway with Terraform.
-Provision and setup infrastructure with Terraform and install needed Software and Tools for the duration of a Workshop.
+This repository makes it a breeze to sping up Workshop VMs on demand in Minutes on AWS or Scaleway together with Terraform.
+
+## Background
 
 When performing hands on workshops it often takes a great amount of time to walk all the participants through the installation process of the needed tools as every participant has a different configuration, machine and operating systems.
 
-A simpler approach is to let the participants spin up a [Vagrant Workshop VM](https://github.com/8gears/workshop-vm) locally and let them do all the course work in that VM.
-This approach only works when there are no heavily restricted devices or corporate Proxies that only allow HTTP and HTTPS traffic. In such hopeless cases its better to provide a Workshop VM in the Cloud.
+A simpler approach is to let the participants spin up a [Vagrant Workshop VM](https://github.com/8gears/workshop-vm) locally and let them do all the course work in that VM. This approach only works when there are no heavily restricted devices or corporate proxies involved that pass HTTP and HTTPS traffic. In such hopeless cases its better to provide a Workshop VM running in the Cloud.
 
-The Primary goal of this repository is to have an easy way to spin up an arbitrary amount VMs on ASWS or Scaleway that we use for our [Docker & Kubernetes Workshops](https://8gears.com/workshops/). However you can easily customize the setup by adding or removing bash scripts.
+The Primary goal of this repository is to provide an easy and reproducible way to spin up an arbitrary amount VMs on AWS or Scaleway that we use ourself for [Docker & Kubernetes Workshops](https://8gears.com/workshops/). However you can easily customize the setup by adding or removing bash scripts.
 
 ## Unique Features
 
@@ -34,7 +34,7 @@ Docker or Terraform need to be installed.
 If Terraform isn't installed and Docker is then execute `tf.sh` which is an alias to executes terraform in a container.
 
 ## Setup
-Customize the values in `terraform.tfvars` or `variable.tf` in term where and how many machines need to be provisioned.
+Customize the parameters in `terraform.tfvars` or `variable.tf` in terms machine count and location.
 
 ```sh
 terraform init ./aws-tf
@@ -43,11 +43,7 @@ terraform apply ./aws-tf
 ```
 
 Select `.scw-tf` if you want to provision on Scaleway.
-Wait a few minues 
-
-## Customization
-
-The Terraform Variables can be need to beset with the count of the instances and the location of the VMs.
+Wait a few minutes. Done!
 
 ## Overcome All Proxy Restrictions
 
