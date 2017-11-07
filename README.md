@@ -21,7 +21,7 @@ The Primary goal of this repository is to provide an easy and reproducible way t
 
 ## How It Works
 
-Terrafrom will order the machines on AWS and SCW, after the machines are booted, Terrafrom will also execute scripts in `./files/` on the machines that perform the customization of the machines.
+With Terrafrom we order the machines on AWS or Scaleway (SCW), after the machines are booted, Terrafrom will also execute customization setup scripts.
 
 ## What Is The Result
 
