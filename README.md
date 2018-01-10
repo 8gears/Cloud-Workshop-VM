@@ -34,6 +34,7 @@ Docker or Terraform need to be installed.
 If Terraform isn't installed and Docker is then execute `tf.sh` which is an alias to executes terraform in a container.
 
 ## Setup
+
 Customize the parameters in `terraform.tfvars` or `variable.tf` in terms machine count and location.
 
 ```sh
