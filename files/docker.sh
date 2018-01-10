@@ -23,5 +23,5 @@ chmod +x /usr/local/bin/docker-compose
 
 echo "...installing docker-compose done. Installed Version is $(docker-compose -v)"
 
-echo "Granting user ubuntu Docker daemon access"
-adduser ubuntu docker
+
+[ -f /usr/local/bin/scw-metadata ] || echo "Granting user ubuntu Docker daemon access" && adduser ubuntu docker
