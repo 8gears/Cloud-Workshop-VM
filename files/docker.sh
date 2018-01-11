@@ -18,7 +18,7 @@ echo -e "\e[1;32m   installing docker-compose...    \e[0m"
 echo -e "\e[1;32m-------------------------------\e[0m"
 
 
-curl -sS -o /usr/local/bin/docker-compose -L "https://github.com/docker/compose/releases/download/1.15.0/docker-compose-$(uname -s)-$(uname -m)"
+curl -sS -o /usr/local/bin/docker-compose -L "https://github.com/docker/compose/releases/download/1.18.0/docker-compose-$(uname -s)-$(uname -m)"
 chmod +x /usr/local/bin/docker-compose
 
 echo "...installing docker-compose done. Installed Version is $(docker-compose -v)"

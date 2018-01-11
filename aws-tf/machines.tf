@@ -49,6 +49,8 @@ resource "aws_instance" "ec2_ondemand_instance" {
 
 module "wvm_ssh_sg" {
   source = "terraform-aws-modules/security-group/aws"
+  version = "1.9.0"
+
 
   name        = "wvm default"
   description = "Default Security group for the workshop VMs. with SSH,HTTP/S and RDP"

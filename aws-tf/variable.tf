@@ -4,7 +4,7 @@
 #
 variable "workshop_user" {
    description = "The default Workshop User."
-   default = "oiz"
+   default = "bud"
 }
 
 variable "workshop_user_password" {
@@ -26,11 +26,11 @@ variable "vpc_region" {
 }
 
 variable "vm_nodes_count" {
-  default = 8
+  default = 10
 }
 
 variable "aws_instance_type" {
-   default = "t2.xlarge"
+   default = "t2.large"
 }
 
 variable "private_key_file" {
