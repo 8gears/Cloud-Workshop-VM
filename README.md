@@ -1,6 +1,6 @@
 # Workshop VM in the Cloud
 
-This repository makes it a breeze to sping up Workshop VMs on demand in Minutes on AWS or Scaleway together with Terraform.
+This repository makes it a breeze to spin up Workshop VMs on demand in Minutes on AWS or Scaleway together with Terraform.
 
 ## Background
 
